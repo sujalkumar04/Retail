@@ -1,0 +1,123 @@
+{
+    "loyalty_tiers": [
+        {
+            "tier": "Bronze",
+            "min_points": 0,
+            "max_points": 999,
+            "benefits": {
+                "points_multiplier": 1.0,
+                "birthday_bonus_points": 100,
+                "early_access_sales": false,
+                "free_shipping_threshold": 2000,
+                "priority_support": false,
+                "exclusive_offers": false
+            },
+            "tier_color": "#CD7F32"
+        },
+        {
+            "tier": "Silver",
+            "min_points": 1000,
+            "max_points": 4999,
+            "benefits": {
+                "points_multiplier": 1.25,
+                "birthday_bonus_points": 250,
+                "early_access_sales": true,
+                "free_shipping_threshold": 1500,
+                "priority_support": false,
+                "exclusive_offers": true,
+                "welcome_voucher": 200
+            },
+            "tier_color": "#C0C0C0"
+        },
+        {
+            "tier": "Gold",
+            "min_points": 5000,
+            "max_points": 9999,
+            "benefits": {
+                "points_multiplier": 1.5,
+                "birthday_bonus_points": 500,
+                "early_access_sales": true,
+                "free_shipping_threshold": 1000,
+                "priority_support": true,
+                "exclusive_offers": true,
+                "welcome_voucher": 500,
+                "quarterly_bonus_points": 300
+            },
+            "tier_color": "#FFD700"
+        },
+        {
+            "tier": "Platinum",
+            "min_points": 10000,
+            "max_points": null,
+            "benefits": {
+                "points_multiplier": 2.0,
+                "birthday_bonus_points": 1000,
+                "early_access_sales": true,
+                "free_shipping_threshold": 0,
+                "priority_support": true,
+                "exclusive_offers": true,
+                "welcome_voucher": 1000,
+                "quarterly_bonus_points": 500,
+                "personal_stylist": true,
+                "vip_events_access": true
+            },
+            "tier_color": "#E5E4E2"
+        }
+    ],
+    "points_earning_rules": {
+        "base_rule": {
+            "description": "Earn 1 point for every ₹100 spent",
+            "points_per_100": 1
+        },
+        "category_multipliers": {
+            "Ethnic Wear": 1.5,
+            "Designer": 2.0,
+            "Accessories": 1.2
+        },
+        "special_events": {
+            "double_points_days": [
+                "Saturday",
+                "Sunday"
+            ],
+            "triple_points_months": [
+                "March",
+                "October"
+            ]
+        },
+        "referral_bonus": {
+            "referrer_points": 500,
+            "referee_points": 300
+        },
+        "review_bonus": {
+            "points_per_review": 50,
+            "max_reviews_per_month": 5
+        },
+        "social_share_bonus": {
+            "points_per_share": 25,
+            "max_shares_per_day": 3
+        }
+    },
+    "points_redemption_rules": {
+        "minimum_redemption": 100,
+        "redemption_rate": {
+            "description": "100 points = ₹100 discount",
+            "points_to_currency": 1.0
+        },
+        "max_redemption_per_order": {
+            "Bronze": 500,
+            "Silver": 1000,
+            "Gold": 2000,
+            "Platinum": 5000
+        },
+        "expiry_rules": {
+            "points_validity_days": 365,
+            "expiry_notification_days": 30
+        }
+    },
+    "tier_upgrade_rules": {
+        "evaluation_period": "12 months",
+        "downgrade_grace_period": "3 months",
+        "upgrade_notification": true,
+        "welcome_benefits_on_upgrade": true
+    }
+}

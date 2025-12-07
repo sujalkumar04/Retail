@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABFRL Retail AI | Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .laser-line-h {
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: linear-gradient(90deg, transparent 0%, #764ba2 50%, transparent 100%);
+            opacity: 0;
+            animation: scan-h 4s linear infinite;
+        }
+
+        .laser-line-v {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent 0%, #667eea 50%, transparent 100%);
+            opacity: 0;
+            animation: scan-v 4s linear infinite;
+        }
+
+        @keyframes scan-h {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes scan-v {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #667eea, #764ba2, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: textShine 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes textShine {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Chat Message Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message-anim {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-[#050505] text-white antialiased h-screen flex flex-col overflow-hidden selection:bg-[#764ba2]/30">
+
+    <!-- Background Effects -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]">
+        </div>
+        <div class="laser-line-h top-[20%]" style="animation-delay: 0s; animation-duration: 3s; left: -20%;"></div>
+        <div class="laser-line-v left-[80%]" style="animation-delay: 1s; animation-duration: 6s; top: -30%;"></div>
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-[#764ba2] rounded-full mix-blend-screen filter blur-[120px] opacity-10 animate-pulse pointer-events-none">
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="relative z-20 border-b border-white/5 bg-[#050505]/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="landing.html" class="flex items-center space-x-2 group">
+                <div
+                    class="relative flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-[#667eea] to-[#764ba2] group-hover:rotate-12 transition-transform duration-300 shadow-[0_0_15px_rgba(118,75,162,0.5)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-bot w-5 h-5 text-white">
+                        <path d="M12 8V4H8" />
+                        <rect width="16" height="12" x="4" y="8" rx="2" />
+                        <path d="M2 14h2" />
+                        <path d="M20 14h2" />
+                        <path d="M15 13v2" />
+                        <path d="M9 13v2" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-medium text-white tracking-tight">ABFRL Retail AI</h1>
+                    <p class="text-xs text-gray-400">Powered by Groq • <span id="session-id"
+                            class="font-mono text-[#764ba2]">Connecting...</span></p>
+                </div>
+            </a>
+            <div class="flex items-center gap-3">
+                <a href="landing.html" class="text-sm text-gray-400 hover:text-white transition-colors">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Chat Area -->
+    <main class="flex-1 relative z-10 flex flex-col max-w-5xl mx-auto w-full p-4 md:p-6 overflow-hidden">
+
+        <!-- Messages Container -->
+        <div id="chat-messages" class="flex-1 overflow-y-auto space-y-6 pr-2 mb-4 scroll-smooth">
+            <!-- Welcome Message -->
+            <div class="flex gap-4 message-anim">
+                <div
+                    class="w-8 h-8 rounded-full bg-gradient-to-br from-[#667eea] to-[#764ba2] flex-shrink-0 flex items-center justify-center shadow-lg shadow-purple-900/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-sparkles text-white">
+                        <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z" />
+                    </svg>
+                </div>
+                <div class="flex flex-col gap-2 max-w-[85%]">
+                    <div
+                        class="bg-[#1a1a1a]/80 backdrop-blur-sm border border-white/10 rounded-2xl rounded-tl-none p-4 text-gray-200 shadow-sm">
+                        <p class="mb-2">👋 Welcome to ABFRL Fashion Store! I'm your personal AI shopping assistant.</p>
+                        <p class="mb-2">How can I help you today? I can help you:</p>
+                        <ul class="list-disc list-inside space-y-1 text-gray-400 ml-1">
+                            <li>Find the perfect outfit</li>
+                            <li>Check product availability</li>
+                            <li>Get personalized recommendations</li>
+                            <li>Track your orders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="relative mt-auto">
+            <div
+                class="absolute -inset-1 bg-gradient-to-r from-[#667eea] via-[#764ba2] to-[#667eea] rounded-2xl blur opacity-20 transition-opacity duration-500">
+            </div>
+            <div class="relative bg-[#0A0A0A] border border-white/10 rounded-xl p-2 flex items-center gap-2 shadow-2xl">
+                <button class="p-2 text-gray-400 hover:text-white transition-colors rounded-lg hover:bg-white/5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-paperclip">
+                        <path
+                            d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" />
+                    </svg>
+                </button>
+                <input type="text" id="user-input"
+                    class="flex-1 bg-transparent border-none outline-none text-white placeholder-gray-500 py-3 px-2"
+                    placeholder="Ask about products, orders, or style advice..." autocomplete="off">
+                <button id="send-button"
+                    class="p-3 bg-[#764ba2] hover:bg-[#60388a] text-white rounded-lg transition-all shadow-lg shadow-purple-900/20 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-send group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+                        <path d="m22 2-7 20-4-9-9-4Z" />
+                        <path d="M22 2 11 13" />
+                    </svg>
+                </button>
+            </div>
+            <p class="text-center text-xs text-gray-600 mt-3">AI can make mistakes. Please verify important information.
+            </p>
+        </div>
+
+    </main>
+
+    <script src="app.js?v=2"></script>
+    <script>
+        lucide.createIcons();
+
+        // Add Enter key support for input
+        document.getElementById('user-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                document.getElementById('send-button').click();
+            }
+        });
+    </script>
+</body>
+
+</html>

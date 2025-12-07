@@ -1,0 +1,144 @@
+{
+    "promotions": [
+        {
+            "id": "PROMO001",
+            "name": "Summer Sale 2024",
+            "type": "percentage_discount",
+            "value": 30,
+            "description": "Flat 30% off on all summer collection",
+            "valid_from": "2024-03-01",
+            "valid_until": "2024-05-31",
+            "applicable_categories": [
+                "Dresses",
+                "Topwear"
+            ],
+            "min_purchase_amount": 2000,
+            "max_discount": 3000,
+            "active": true,
+            "stackable": false
+        },
+        {
+            "id": "PROMO002",
+            "name": "Ethnic Festive Bonanza",
+            "type": "percentage_discount",
+            "value": 25,
+            "description": "25% off on ethnic wear for festive season",
+            "valid_from": "2024-02-01",
+            "valid_until": "2024-04-30",
+            "applicable_categories": [
+                "Ethnic Wear"
+            ],
+            "min_purchase_amount": 3000,
+            "max_discount": 5000,
+            "active": true,
+            "stackable": false
+        },
+        {
+            "id": "PROMO003",
+            "name": "Buy 2 Get 1 Free",
+            "type": "bogo",
+            "value": 1,
+            "description": "Buy 2 items, get 1 free on selected categories",
+            "valid_from": "2024-01-15",
+            "valid_until": "2024-12-31",
+            "applicable_categories": [
+                "Topwear",
+                "Bottomwear"
+            ],
+            "min_purchase_amount": 0,
+            "active": true,
+            "stackable": false
+        },
+        {
+            "id": "PROMO004",
+            "name": "First Purchase Discount",
+            "type": "percentage_discount",
+            "value": 15,
+            "description": "15% off on your first purchase",
+            "valid_from": "2024-01-01",
+            "valid_until": "2024-12-31",
+            "applicable_to": "new_customers",
+            "min_purchase_amount": 1500,
+            "max_discount": 1000,
+            "active": true,
+            "stackable": true
+        },
+        {
+            "id": "PROMO005",
+            "name": "Flat ₹500 Off",
+            "type": "flat_discount",
+            "value": 500,
+            "description": "Flat ₹500 off on orders above ₹5000",
+            "valid_from": "2024-02-01",
+            "valid_until": "2024-03-31",
+            "min_purchase_amount": 5000,
+            "active": true,
+            "stackable": true
+        },
+        {
+            "id": "PROMO006",
+            "name": "Weekend Special",
+            "type": "percentage_discount",
+            "value": 20,
+            "description": "20% off on all items - Weekend only",
+            "valid_from": "2024-01-01",
+            "valid_until": "2024-12-31",
+            "applicable_days": [
+                "Saturday",
+                "Sunday"
+            ],
+            "min_purchase_amount": 2500,
+            "max_discount": 2000,
+            "active": true,
+            "stackable": false
+        }
+    ],
+    "coupon_codes": [
+        {
+            "code": "WELCOME15",
+            "type": "percentage_discount",
+            "value": 15,
+            "description": "Welcome offer - 15% off",
+            "valid_from": "2024-01-01",
+            "valid_until": "2024-12-31",
+            "usage_limit": 1,
+            "min_purchase_amount": 1000,
+            "max_discount": 1500,
+            "applicable_to": "new_customers",
+            "active": true
+        },
+        {
+            "code": "SAVE500",
+            "type": "flat_discount",
+            "value": 500,
+            "description": "Flat ₹500 off on orders above ₹3000",
+            "valid_from": "2024-02-01",
+            "valid_until": "2024-04-30",
+            "usage_limit": 3,
+            "min_purchase_amount": 3000,
+            "active": true
+        },
+        {
+            "code": "PLATINUM20",
+            "type": "percentage_discount",
+            "value": 20,
+            "description": "Exclusive 20% off for Platinum members",
+            "valid_from": "2024-01-01",
+            "valid_until": "2024-12-31",
+            "applicable_to": "platinum_members",
+            "min_purchase_amount": 2000,
+            "max_discount": 3000,
+            "active": true
+        },
+        {
+            "code": "FREESHIP",
+            "type": "free_shipping",
+            "value": 0,
+            "description": "Free shipping on all orders",
+            "valid_from": "2024-01-01",
+            "valid_until": "2024-03-31",
+            "min_purchase_amount": 1500,
+            "active": true
+        }
+    ]
+}

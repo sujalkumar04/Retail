@@ -1,0 +1,754 @@
+{
+    "customers": [
+        {
+            "id": "CUST001",
+            "name": "Priya Sharma",
+            "email": "priya.sharma@email.com",
+            "phone": "+91-9876543210",
+            "age": 28,
+            "gender": "Female",
+            "loyalty_tier": "Gold",
+            "loyalty_points": 2500,
+            "member_since": "2022-03-15",
+            "preferred_store": "Mumbai - Phoenix Mall",
+            "preferred_channel": "mobile_app",
+            "device_preferences": [
+                "iOS",
+                "mobile_app"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD10234",
+                    "date": "2024-01-15",
+                    "items": [
+                        {
+                            "sku": "DRESS-001",
+                            "name": "Floral Maxi Dress",
+                            "price": 3999,
+                            "size": "M"
+                        }
+                    ],
+                    "total": 3999
+                },
+                {
+                    "order_id": "ORD10456",
+                    "date": "2024-02-20",
+                    "items": [
+                        {
+                            "sku": "TOP-023",
+                            "name": "Silk Blouse",
+                            "price": 2499,
+                            "size": "M"
+                        },
+                        {
+                            "sku": "PANT-012",
+                            "name": "High-Waist Trousers",
+                            "price": 2999,
+                            "size": "28"
+                        }
+                    ],
+                    "total": 5498
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Ethnic",
+                    "Indo-Western",
+                    "Casual"
+                ],
+                "colors": [
+                    "Pastels",
+                    "Earth Tones"
+                ],
+                "sizes": {
+                    "top": "M",
+                    "bottom": "28",
+                    "dress": "M"
+                },
+                "budget_range": "mid-premium"
+            },
+            "browsing_history": [
+                "SAREE-045",
+                "KURTI-078",
+                "DRESS-089"
+            ],
+            "wishlist": [
+                "SAREE-045",
+                "JEWELRY-023"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "42, Bandra West, Mumbai - 400050",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "card",
+                    "last_four": "4532",
+                    "brand": "Visa"
+                },
+                {
+                    "type": "upi",
+                    "id": "priya@okicici"
+                }
+            ]
+        },
+        {
+            "id": "CUST002",
+            "name": "Rahul Mehta",
+            "email": "rahul.mehta@email.com",
+            "phone": "+91-9876543211",
+            "age": 35,
+            "gender": "Male",
+            "loyalty_tier": "Platinum",
+            "loyalty_points": 8500,
+            "member_since": "2020-08-10",
+            "preferred_store": "Delhi - Select Citywalk",
+            "preferred_channel": "web_chat",
+            "device_preferences": [
+                "Android",
+                "web"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD09876",
+                    "date": "2024-01-05",
+                    "items": [
+                        {
+                            "sku": "SUIT-001",
+                            "name": "Navy Blue Formal Suit",
+                            "price": 15999,
+                            "size": "42"
+                        },
+                        {
+                            "sku": "SHIRT-034",
+                            "name": "White Formal Shirt",
+                            "price": 2999,
+                            "size": "L"
+                        }
+                    ],
+                    "total": 18998
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Formal",
+                    "Business Casual",
+                    "Smart Casual"
+                ],
+                "colors": [
+                    "Navy",
+                    "Grey",
+                    "White",
+                    "Black"
+                ],
+                "sizes": {
+                    "shirt": "L",
+                    "trouser": "34",
+                    "suit": "42"
+                },
+                "budget_range": "premium"
+            },
+            "browsing_history": [
+                "BLAZER-012",
+                "CHINOS-045",
+                "WATCH-009"
+            ],
+            "wishlist": [
+                "BLAZER-012"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "office",
+                    "address": "Tower B, Cyber City, Gurgaon - 122002",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "card",
+                    "last_four": "8976",
+                    "brand": "Amex"
+                },
+                {
+                    "type": "card",
+                    "last_four": "2341",
+                    "brand": "Mastercard"
+                }
+            ]
+        },
+        {
+            "id": "CUST003",
+            "name": "Ananya Reddy",
+            "email": "ananya.reddy@email.com",
+            "phone": "+91-9876543212",
+            "age": 24,
+            "gender": "Female",
+            "loyalty_tier": "Silver",
+            "loyalty_points": 850,
+            "member_since": "2023-06-20",
+            "preferred_store": "Bangalore - UB City",
+            "preferred_channel": "whatsapp",
+            "device_preferences": [
+                "Android",
+                "whatsapp"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD11234",
+                    "date": "2024-02-10",
+                    "items": [
+                        {
+                            "sku": "JEANS-067",
+                            "name": "Skinny Fit Jeans",
+                            "price": 2499,
+                            "size": "26"
+                        }
+                    ],
+                    "total": 2499
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Casual",
+                    "Streetwear",
+                    "Athleisure"
+                ],
+                "colors": [
+                    "Bright Colors",
+                    "Denim",
+                    "Black"
+                ],
+                "sizes": {
+                    "top": "S",
+                    "bottom": "26",
+                    "dress": "S"
+                },
+                "budget_range": "mid"
+            },
+            "browsing_history": [
+                "TSHIRT-089",
+                "SNEAKERS-023",
+                "HOODIE-012"
+            ],
+            "wishlist": [
+                "SNEAKERS-023",
+                "BAG-045"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "203, Koramangala 5th Block, Bangalore - 560095",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "upi",
+                    "id": "ananya@ybl"
+                }
+            ]
+        },
+        {
+            "id": "CUST004",
+            "name": "Vikram Singh",
+            "email": "vikram.singh@email.com",
+            "phone": "+91-9876543213",
+            "age": 42,
+            "gender": "Male",
+            "loyalty_tier": "Gold",
+            "loyalty_points": 3200,
+            "member_since": "2021-11-05",
+            "preferred_store": "Chennai - Express Avenue",
+            "preferred_channel": "kiosk",
+            "device_preferences": [
+                "in-store",
+                "kiosk"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD08765",
+                    "date": "2024-01-25",
+                    "items": [
+                        {
+                            "sku": "POLO-023",
+                            "name": "Premium Polo T-Shirt",
+                            "price": 1999,
+                            "size": "XL"
+                        },
+                        {
+                            "sku": "POLO-024",
+                            "name": "Premium Polo T-Shirt",
+                            "price": 1999,
+                            "size": "XL"
+                        }
+                    ],
+                    "total": 3998
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Casual",
+                    "Smart Casual"
+                ],
+                "colors": [
+                    "Solid Colors",
+                    "Classic Patterns"
+                ],
+                "sizes": {
+                    "shirt": "XL",
+                    "trouser": "36"
+                },
+                "budget_range": "mid-premium"
+            },
+            "browsing_history": [
+                "CHINOS-034",
+                "SHOES-067"
+            ],
+            "wishlist": [],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "15, Anna Nagar, Chennai - 600040",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "card",
+                    "last_four": "5678",
+                    "brand": "Visa"
+                }
+            ]
+        },
+        {
+            "id": "CUST005",
+            "name": "Meera Kapoor",
+            "email": "meera.kapoor@email.com",
+            "phone": "+91-9876543214",
+            "age": 31,
+            "gender": "Female",
+            "loyalty_tier": "Platinum",
+            "loyalty_points": 12000,
+            "member_since": "2019-04-12",
+            "preferred_store": "Mumbai - Palladium",
+            "preferred_channel": "voice",
+            "device_preferences": [
+                "iOS",
+                "voice_assistant"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD12345",
+                    "date": "2024-02-28",
+                    "items": [
+                        {
+                            "sku": "SAREE-089",
+                            "name": "Banarasi Silk Saree",
+                            "price": 25999,
+                            "size": "Free"
+                        },
+                        {
+                            "sku": "BLOUSE-012",
+                            "name": "Designer Blouse",
+                            "price": 4999,
+                            "size": "M"
+                        }
+                    ],
+                    "total": 30998
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Ethnic",
+                    "Designer",
+                    "Luxury"
+                ],
+                "colors": [
+                    "Rich Colors",
+                    "Gold",
+                    "Jewel Tones"
+                ],
+                "sizes": {
+                    "top": "M",
+                    "bottom": "30",
+                    "saree": "Free Size"
+                },
+                "budget_range": "luxury"
+            },
+            "browsing_history": [
+                "LEHENGA-001",
+                "JEWELRY-089",
+                "CLUTCH-023"
+            ],
+            "wishlist": [
+                "LEHENGA-001",
+                "JEWELRY-089"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "Skyline Towers, Worli, Mumbai - 400018",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "card",
+                    "last_four": "1234",
+                    "brand": "Amex"
+                },
+                {
+                    "type": "card",
+                    "last_four": "9876",
+                    "brand": "Visa"
+                }
+            ]
+        },
+        {
+            "id": "CUST006",
+            "name": "Arjun Patel",
+            "email": "arjun.patel@email.com",
+            "phone": "+91-9876543215",
+            "age": 26,
+            "gender": "Male",
+            "loyalty_tier": "Bronze",
+            "loyalty_points": 300,
+            "member_since": "2024-01-10",
+            "preferred_store": "Ahmedabad - Alpha One",
+            "preferred_channel": "telegram",
+            "device_preferences": [
+                "Android",
+                "telegram"
+            ],
+            "purchase_history": [],
+            "preferences": {
+                "styles": [
+                    "Casual",
+                    "Trendy"
+                ],
+                "colors": [
+                    "Bright",
+                    "Patterns"
+                ],
+                "sizes": {
+                    "shirt": "M",
+                    "trouser": "32"
+                },
+                "budget_range": "budget"
+            },
+            "browsing_history": [
+                "TSHIRT-045",
+                "SHORTS-023"
+            ],
+            "wishlist": [
+                "SNEAKERS-045"
+            ],
+            "saved_addresses": [],
+            "saved_payment_methods": []
+        },
+        {
+            "id": "CUST007",
+            "name": "Sanjana Iyer",
+            "email": "sanjana.iyer@email.com",
+            "phone": "+91-9876543216",
+            "age": 29,
+            "gender": "Female",
+            "loyalty_tier": "Gold",
+            "loyalty_points": 4500,
+            "member_since": "2021-07-22",
+            "preferred_store": "Hyderabad - Inorbit Mall",
+            "preferred_channel": "mobile_app",
+            "device_preferences": [
+                "iOS",
+                "mobile_app"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD13456",
+                    "date": "2024-02-15",
+                    "items": [
+                        {
+                            "sku": "KURTI-056",
+                            "name": "Embroidered Kurti",
+                            "price": 1899,
+                            "size": "M"
+                        },
+                        {
+                            "sku": "PALAZZO-023",
+                            "name": "Palazzo Pants",
+                            "price": 1299,
+                            "size": "M"
+                        }
+                    ],
+                    "total": 3198
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Indo-Western",
+                    "Fusion",
+                    "Office Wear"
+                ],
+                "colors": [
+                    "Pastels",
+                    "Prints"
+                ],
+                "sizes": {
+                    "top": "M",
+                    "bottom": "M",
+                    "kurta": "M"
+                },
+                "budget_range": "mid"
+            },
+            "browsing_history": [
+                "DRESS-045",
+                "HEELS-023",
+                "KURTI-089"
+            ],
+            "wishlist": [
+                "DRESS-045"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "Flat 304, Jubilee Hills, Hyderabad - 500033",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "upi",
+                    "id": "sanjana@paytm"
+                }
+            ]
+        },
+        {
+            "id": "CUST008",
+            "name": "Karthik Nair",
+            "email": "karthik.nair@email.com",
+            "phone": "+91-9876543217",
+            "age": 38,
+            "gender": "Male",
+            "loyalty_tier": "Silver",
+            "loyalty_points": 1500,
+            "member_since": "2022-09-15",
+            "preferred_store": "Kochi - Lulu Mall",
+            "preferred_channel": "web_chat",
+            "device_preferences": [
+                "web",
+                "desktop"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD14567",
+                    "date": "2024-01-30",
+                    "items": [
+                        {
+                            "sku": "SHIRT-089",
+                            "name": "Linen Casual Shirt",
+                            "price": 2299,
+                            "size": "L"
+                        }
+                    ],
+                    "total": 2299
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Casual",
+                    "Beach Wear",
+                    "Relaxed"
+                ],
+                "colors": [
+                    "White",
+                    "Linen",
+                    "Light Colors"
+                ],
+                "sizes": {
+                    "shirt": "L",
+                    "trouser": "34"
+                },
+                "budget_range": "mid"
+            },
+            "browsing_history": [
+                "SHORTS-045",
+                "SANDALS-012"
+            ],
+            "wishlist": [
+                "WATCH-034"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "Marine Drive, Kochi - 682031",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "card",
+                    "last_four": "7890",
+                    "brand": "Visa"
+                }
+            ]
+        },
+        {
+            "id": "CUST009",
+            "name": "Neha Gupta",
+            "email": "neha.gupta@email.com",
+            "phone": "+91-9876543218",
+            "age": 33,
+            "gender": "Female",
+            "loyalty_tier": "Gold",
+            "loyalty_points": 5800,
+            "member_since": "2020-12-01",
+            "preferred_store": "Delhi - DLF Promenade",
+            "preferred_channel": "mobile_app",
+            "device_preferences": [
+                "iOS",
+                "mobile_app",
+                "whatsapp"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD15678",
+                    "date": "2024-02-25",
+                    "items": [
+                        {
+                            "sku": "COAT-012",
+                            "name": "Wool Winter Coat",
+                            "price": 8999,
+                            "size": "M"
+                        },
+                        {
+                            "sku": "SCARF-034",
+                            "name": "Cashmere Scarf",
+                            "price": 2999,
+                            "size": "Free"
+                        }
+                    ],
+                    "total": 11998
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Chic",
+                    "Minimalist",
+                    "European"
+                ],
+                "colors": [
+                    "Neutrals",
+                    "Monochromes"
+                ],
+                "sizes": {
+                    "top": "M",
+                    "bottom": "28",
+                    "coat": "M"
+                },
+                "budget_range": "premium"
+            },
+            "browsing_history": [
+                "BOOTS-023",
+                "BAG-089",
+                "SWEATER-045"
+            ],
+            "wishlist": [
+                "BOOTS-023",
+                "BAG-089"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "C-45, Vasant Vihar, New Delhi - 110057",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "card",
+                    "last_four": "3456",
+                    "brand": "Mastercard"
+                },
+                {
+                    "type": "upi",
+                    "id": "neha@icici"
+                }
+            ]
+        },
+        {
+            "id": "CUST010",
+            "name": "Rohan Desai",
+            "email": "rohan.desai@email.com",
+            "phone": "+91-9876543219",
+            "age": 27,
+            "gender": "Male",
+            "loyalty_tier": "Silver",
+            "loyalty_points": 980,
+            "member_since": "2023-03-08",
+            "preferred_store": "Pune - Phoenix Marketcity",
+            "preferred_channel": "whatsapp",
+            "device_preferences": [
+                "Android",
+                "whatsapp",
+                "mobile_app"
+            ],
+            "purchase_history": [
+                {
+                    "order_id": "ORD16789",
+                    "date": "2024-02-05",
+                    "items": [
+                        {
+                            "sku": "JACKET-034",
+                            "name": "Denim Jacket",
+                            "price": 3499,
+                            "size": "M"
+                        }
+                    ],
+                    "total": 3499
+                }
+            ],
+            "preferences": {
+                "styles": [
+                    "Casual",
+                    "Denim",
+                    "Street Style"
+                ],
+                "colors": [
+                    "Denim",
+                    "Black",
+                    "Earth Tones"
+                ],
+                "sizes": {
+                    "shirt": "M",
+                    "trouser": "32",
+                    "jacket": "M"
+                },
+                "budget_range": "mid"
+            },
+            "browsing_history": [
+                "JEANS-089",
+                "TSHIRT-034",
+                "SNEAKERS-067"
+            ],
+            "wishlist": [
+                "SNEAKERS-067"
+            ],
+            "saved_addresses": [
+                {
+                    "type": "home",
+                    "address": "Lane 5, Koregaon Park, Pune - 411001",
+                    "is_default": true
+                }
+            ],
+            "saved_payment_methods": [
+                {
+                    "type": "upi",
+                    "id": "rohan@gpay"
+                }
+            ]
+        }
+    ]
+}

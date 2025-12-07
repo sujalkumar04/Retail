@@ -1,0 +1,533 @@
+{
+    "inventory": {
+        "DRESS-001": {
+            "online": {
+                "Blue Floral": {
+                    "XS": 5,
+                    "S": 12,
+                    "M": 8,
+                    "L": 3,
+                    "XL": 0
+                },
+                "Pink Floral": {
+                    "XS": 3,
+                    "S": 7,
+                    "M": 15,
+                    "L": 6,
+                    "XL": 2
+                },
+                "Yellow Floral": {
+                    "XS": 0,
+                    "S": 4,
+                    "M": 9,
+                    "L": 2,
+                    "XL": 1
+                }
+            },
+            "stores": {
+                "Mumbai - Phoenix Mall": {
+                    "Blue Floral": {
+                        "S": 2,
+                        "M": 3,
+                        "L": 1
+                    },
+                    "Pink Floral": {
+                        "M": 2,
+                        "L": 2
+                    }
+                },
+                "Delhi - Select Citywalk": {
+                    "Blue Floral": {
+                        "S": 1,
+                        "M": 2
+                    },
+                    "Pink Floral": {
+                        "S": 3,
+                        "M": 4,
+                        "L": 1
+                    }
+                },
+                "Bangalore - UB City": {
+                    "Yellow Floral": {
+                        "S": 2,
+                        "M": 2
+                    }
+                }
+            }
+        },
+        "SUIT-001": {
+            "online": {
+                "Navy Blue": {
+                    "38": 4,
+                    "40": 8,
+                    "42": 6,
+                    "44": 3,
+                    "46": 2
+                },
+                "Charcoal Grey": {
+                    "38": 2,
+                    "40": 5,
+                    "42": 4,
+                    "44": 2,
+                    "46": 1
+                },
+                "Black": {
+                    "38": 3,
+                    "40": 6,
+                    "42": 5,
+                    "44": 4,
+                    "46": 2
+                }
+            },
+            "stores": {
+                "Mumbai - Phoenix Mall": {
+                    "Navy Blue": {
+                        "40": 2,
+                        "42": 2
+                    },
+                    "Charcoal Grey": {
+                        "42": 1
+                    }
+                },
+                "Delhi - Select Citywalk": {
+                    "Navy Blue": {
+                        "38": 1,
+                        "40": 2,
+                        "42": 3,
+                        "44": 1
+                    },
+                    "Black": {
+                        "40": 2,
+                        "42": 2
+                    }
+                }
+            }
+        },
+        "KURTI-056": {
+            "online": {
+                "White": {
+                    "XS": 10,
+                    "S": 25,
+                    "M": 30,
+                    "L": 20,
+                    "XL": 15,
+                    "XXL": 8
+                },
+                "Sky Blue": {
+                    "XS": 8,
+                    "S": 20,
+                    "M": 25,
+                    "L": 18,
+                    "XL": 12,
+                    "XXL": 5
+                },
+                "Peach": {
+                    "XS": 5,
+                    "S": 15,
+                    "M": 20,
+                    "L": 12,
+                    "XL": 8,
+                    "XXL": 3
+                },
+                "Mint Green": {
+                    "XS": 6,
+                    "S": 18,
+                    "M": 22,
+                    "L": 15,
+                    "XL": 10,
+                    "XXL": 4
+                }
+            },
+            "stores": {
+                "Hyderabad - Inorbit Mall": {
+                    "White": {
+                        "S": 5,
+                        "M": 8,
+                        "L": 4
+                    },
+                    "Peach": {
+                        "M": 3,
+                        "L": 2
+                    }
+                },
+                "Chennai - Express Avenue": {
+                    "Sky Blue": {
+                        "M": 4,
+                        "L": 3
+                    },
+                    "Mint Green": {
+                        "S": 2,
+                        "M": 5
+                    }
+                }
+            }
+        },
+        "SAREE-089": {
+            "online": {
+                "Royal Blue": {
+                    "Free Size": 8
+                },
+                "Maroon": {
+                    "Free Size": 12
+                },
+                "Emerald Green": {
+                    "Free Size": 6
+                },
+                "Purple": {
+                    "Free Size": 4
+                }
+            },
+            "stores": {
+                "Mumbai - Palladium": {
+                    "Maroon": {
+                        "Free Size": 2
+                    },
+                    "Royal Blue": {
+                        "Free Size": 1
+                    }
+                },
+                "Delhi - DLF Promenade": {
+                    "Emerald Green": {
+                        "Free Size": 1
+                    },
+                    "Maroon": {
+                        "Free Size": 2
+                    }
+                }
+            }
+        },
+        "JEANS-067": {
+            "online": {
+                "Dark Blue": {
+                    "24": 8,
+                    "26": 15,
+                    "28": 20,
+                    "30": 18,
+                    "32": 12,
+                    "34": 8
+                },
+                "Light Blue": {
+                    "24": 5,
+                    "26": 12,
+                    "28": 18,
+                    "30": 15,
+                    "32": 10,
+                    "34": 6
+                },
+                "Black": {
+                    "24": 6,
+                    "26": 14,
+                    "28": 16,
+                    "30": 14,
+                    "32": 11,
+                    "34": 7
+                },
+                "Grey": {
+                    "24": 4,
+                    "26": 10,
+                    "28": 12,
+                    "30": 10,
+                    "32": 8,
+                    "34": 5
+                }
+            },
+            "stores": {
+                "Bangalore - UB City": {
+                    "Dark Blue": {
+                        "26": 3,
+                        "28": 4,
+                        "30": 2
+                    },
+                    "Black": {
+                        "26": 2,
+                        "28": 3
+                    }
+                },
+                "Pune - Phoenix Marketcity": {
+                    "Light Blue": {
+                        "28": 2,
+                        "30": 3,
+                        "32": 2
+                    },
+                    "Grey": {
+                        "30": 2,
+                        "32": 2
+                    }
+                }
+            }
+        },
+        "POLO-023": {
+            "online": {
+                "Navy": {
+                    "S": 20,
+                    "M": 35,
+                    "L": 30,
+                    "XL": 25,
+                    "XXL": 15
+                },
+                "White": {
+                    "S": 18,
+                    "M": 30,
+                    "L": 28,
+                    "XL": 22,
+                    "XXL": 12
+                },
+                "Black": {
+                    "S": 15,
+                    "M": 28,
+                    "L": 25,
+                    "XL": 20,
+                    "XXL": 10
+                },
+                "Red": {
+                    "S": 10,
+                    "M": 20,
+                    "L": 18,
+                    "XL": 12,
+                    "XXL": 6
+                },
+                "Green": {
+                    "S": 8,
+                    "M": 15,
+                    "L": 14,
+                    "XL": 10,
+                    "XXL": 5
+                }
+            },
+            "stores": {
+                "Chennai - Express Avenue": {
+                    "Navy": {
+                        "L": 4,
+                        "XL": 3
+                    },
+                    "White": {
+                        "M": 3,
+                        "L": 4,
+                        "XL": 2
+                    }
+                },
+                "Mumbai - Phoenix Mall": {
+                    "Black": {
+                        "M": 2,
+                        "L": 3
+                    },
+                    "Red": {
+                        "L": 2,
+                        "XL": 2
+                    }
+                }
+            }
+        },
+        "BLAZER-012": {
+            "online": {
+                "Navy": {
+                    "36": 4,
+                    "38": 8,
+                    "40": 10,
+                    "42": 8,
+                    "44": 5
+                },
+                "Grey": {
+                    "36": 3,
+                    "38": 6,
+                    "40": 8,
+                    "42": 6,
+                    "44": 4
+                },
+                "Black": {
+                    "36": 5,
+                    "38": 9,
+                    "40": 12,
+                    "42": 10,
+                    "44": 6
+                },
+                "Burgundy": {
+                    "36": 2,
+                    "38": 4,
+                    "40": 6,
+                    "42": 4,
+                    "44": 2
+                }
+            },
+            "stores": {
+                "Delhi - Select Citywalk": {
+                    "Navy": {
+                        "40": 2,
+                        "42": 2
+                    },
+                    "Grey": {
+                        "38": 1,
+                        "40": 2
+                    }
+                }
+            }
+        },
+        "SNEAKERS-023": {
+            "online": {
+                "White": {
+                    "UK 6": 8,
+                    "UK 7": 15,
+                    "UK 8": 20,
+                    "UK 9": 18,
+                    "UK 10": 12,
+                    "UK 11": 6
+                },
+                "White/Black": {
+                    "UK 6": 5,
+                    "UK 7": 10,
+                    "UK 8": 15,
+                    "UK 9": 12,
+                    "UK 10": 8,
+                    "UK 11": 4
+                },
+                "White/Navy": {
+                    "UK 6": 4,
+                    "UK 7": 8,
+                    "UK 8": 12,
+                    "UK 9": 10,
+                    "UK 10": 6,
+                    "UK 11": 3
+                }
+            },
+            "stores": {
+                "Bangalore - UB City": {
+                    "White": {
+                        "UK 7": 2,
+                        "UK 8": 3,
+                        "UK 9": 2
+                    }
+                },
+                "Pune - Phoenix Marketcity": {
+                    "White/Black": {
+                        "UK 8": 2,
+                        "UK 9": 2
+                    }
+                }
+            }
+        },
+        "JACKET-034": {
+            "online": {
+                "Light Blue": {
+                    "S": 8,
+                    "M": 15,
+                    "L": 12,
+                    "XL": 8,
+                    "XXL": 4
+                },
+                "Medium Blue": {
+                    "S": 10,
+                    "M": 18,
+                    "L": 15,
+                    "XL": 10,
+                    "XXL": 5
+                },
+                "Dark Blue": {
+                    "S": 6,
+                    "M": 12,
+                    "L": 10,
+                    "XL": 7,
+                    "XXL": 3
+                },
+                "Black": {
+                    "S": 12,
+                    "M": 20,
+                    "L": 18,
+                    "XL": 12,
+                    "XXL": 6
+                }
+            },
+            "stores": {
+                "Pune - Phoenix Marketcity": {
+                    "Medium Blue": {
+                        "M": 3,
+                        "L": 2
+                    },
+                    "Black": {
+                        "M": 2,
+                        "L": 2,
+                        "XL": 1
+                    }
+                }
+            }
+        },
+        "LEHENGA-001": {
+            "online": {
+                "Red": {
+                    "S": 2,
+                    "M": 4,
+                    "L": 3,
+                    "XL": 1
+                },
+                "Maroon": {
+                    "S": 3,
+                    "M": 5,
+                    "L": 4,
+                    "XL": 2
+                },
+                "Pink": {
+                    "S": 2,
+                    "M": 3,
+                    "L": 2,
+                    "XL": 1
+                },
+                "Gold": {
+                    "S": 1,
+                    "M": 2,
+                    "L": 2,
+                    "XL": 1
+                }
+            },
+            "stores": {
+                "Mumbai - Palladium": {
+                    "Red": {
+                        "M": 1
+                    },
+                    "Maroon": {
+                        "M": 1,
+                        "L": 1
+                    }
+                },
+                "Delhi - DLF Promenade": {
+                    "Pink": {
+                        "S": 1,
+                        "M": 1
+                    },
+                    "Gold": {
+                        "M": 1
+                    }
+                }
+            }
+        }
+    },
+    "warehouses": [
+        {
+            "id": "WH-MUM",
+            "name": "Mumbai Warehouse",
+            "location": "Bhiwandi, Mumbai"
+        },
+        {
+            "id": "WH-DEL",
+            "name": "Delhi Warehouse",
+            "location": "Gurgaon, Delhi NCR"
+        },
+        {
+            "id": "WH-BLR",
+            "name": "Bangalore Warehouse",
+            "location": "Whitefield, Bangalore"
+        }
+    ],
+    "delivery_estimates": {
+        "same_city": {
+            "standard": "1-2 days",
+            "express": "Same day"
+        },
+        "metro_to_metro": {
+            "standard": "2-3 days",
+            "express": "Next day"
+        },
+        "other": {
+            "standard": "4-6 days",
+            "express": "2-3 days"
+        }
+    }
+}

@@ -1,0 +1,572 @@
+{
+    "products": [
+        {
+            "sku": "DRESS-001",
+            "name": "Floral Maxi Dress",
+            "category": "Dresses",
+            "subcategory": "Maxi Dresses",
+            "brand": "AND",
+            "price": 3999,
+            "original_price": 4999,
+            "discount_percent": 20,
+            "description": "Elegant floral print maxi dress perfect for summer outings and brunches",
+            "fabric": "Georgette",
+            "care": "Dry Clean Only",
+            "sizes": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Blue Floral",
+                "Pink Floral",
+                "Yellow Floral"
+            ],
+            "images": [
+                "dress-001-1.jpg",
+                "dress-001-2.jpg"
+            ],
+            "tags": [
+                "summer",
+                "casual",
+                "floral",
+                "party"
+            ],
+            "ratings": {
+                "average": 4.5,
+                "count": 128
+            },
+            "complementary_products": [
+                "SANDALS-023",
+                "BAG-045",
+                "JEWELRY-012"
+            ]
+        },
+        {
+            "sku": "SUIT-001",
+            "name": "Navy Blue Formal Suit",
+            "category": "Suits",
+            "subcategory": "Formal Suits",
+            "brand": "Louis Philippe",
+            "price": 15999,
+            "original_price": 19999,
+            "discount_percent": 20,
+            "description": "Classic navy blue formal suit crafted from premium wool blend",
+            "fabric": "Wool Blend",
+            "care": "Dry Clean Only",
+            "sizes": [
+                "38",
+                "40",
+                "42",
+                "44",
+                "46"
+            ],
+            "colors": [
+                "Navy Blue",
+                "Charcoal Grey",
+                "Black"
+            ],
+            "images": [
+                "suit-001-1.jpg",
+                "suit-001-2.jpg"
+            ],
+            "tags": [
+                "formal",
+                "business",
+                "wedding",
+                "premium"
+            ],
+            "ratings": {
+                "average": 4.8,
+                "count": 89
+            },
+            "complementary_products": [
+                "SHIRT-034",
+                "TIE-012",
+                "SHOES-089"
+            ]
+        },
+        {
+            "sku": "KURTI-056",
+            "name": "Embroidered Cotton Kurti",
+            "category": "Ethnic Wear",
+            "subcategory": "Kurtis",
+            "brand": "BIBA",
+            "price": 1899,
+            "original_price": 2499,
+            "discount_percent": 24,
+            "description": "Beautiful hand-embroidered cotton kurti with intricate threadwork",
+            "fabric": "Pure Cotton",
+            "care": "Machine Wash",
+            "sizes": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "colors": [
+                "White",
+                "Sky Blue",
+                "Peach",
+                "Mint Green"
+            ],
+            "images": [
+                "kurti-056-1.jpg",
+                "kurti-056-2.jpg"
+            ],
+            "tags": [
+                "ethnic",
+                "casual",
+                "office",
+                "cotton"
+            ],
+            "ratings": {
+                "average": 4.3,
+                "count": 256
+            },
+            "complementary_products": [
+                "PALAZZO-023",
+                "DUPATTA-034",
+                "JUTTIS-012"
+            ]
+        },
+        {
+            "sku": "SAREE-089",
+            "name": "Banarasi Silk Saree",
+            "category": "Ethnic Wear",
+            "subcategory": "Sarees",
+            "brand": "Fabindia",
+            "price": 25999,
+            "original_price": 29999,
+            "discount_percent": 13,
+            "description": "Exquisite handwoven Banarasi silk saree with gold zari work",
+            "fabric": "Pure Silk",
+            "care": "Dry Clean Only",
+            "sizes": [
+                "Free Size"
+            ],
+            "colors": [
+                "Royal Blue",
+                "Maroon",
+                "Emerald Green",
+                "Purple"
+            ],
+            "images": [
+                "saree-089-1.jpg",
+                "saree-089-2.jpg"
+            ],
+            "tags": [
+                "wedding",
+                "festive",
+                "luxury",
+                "traditional"
+            ],
+            "ratings": {
+                "average": 4.9,
+                "count": 67
+            },
+            "complementary_products": [
+                "BLOUSE-012",
+                "JEWELRY-089",
+                "CLUTCH-023"
+            ]
+        },
+        {
+            "sku": "JEANS-067",
+            "name": "Skinny Fit Stretch Jeans",
+            "category": "Bottomwear",
+            "subcategory": "Jeans",
+            "brand": "Levi's",
+            "price": 2499,
+            "original_price": 3499,
+            "discount_percent": 29,
+            "description": "Classic skinny fit jeans with comfortable stretch fabric",
+            "fabric": "Cotton Stretch Denim",
+            "care": "Machine Wash",
+            "sizes": [
+                "24",
+                "26",
+                "28",
+                "30",
+                "32",
+                "34"
+            ],
+            "colors": [
+                "Dark Blue",
+                "Light Blue",
+                "Black",
+                "Grey"
+            ],
+            "images": [
+                "jeans-067-1.jpg",
+                "jeans-067-2.jpg"
+            ],
+            "tags": [
+                "casual",
+                "everyday",
+                "denim",
+                "bestseller"
+            ],
+            "ratings": {
+                "average": 4.4,
+                "count": 512
+            },
+            "complementary_products": [
+                "TSHIRT-089",
+                "SNEAKERS-023",
+                "BELT-012"
+            ]
+        },
+        {
+            "sku": "POLO-023",
+            "name": "Premium Cotton Polo T-Shirt",
+            "category": "Topwear",
+            "subcategory": "Polos",
+            "brand": "Allen Solly",
+            "price": 1999,
+            "original_price": 2499,
+            "discount_percent": 20,
+            "description": "Classic polo t-shirt in premium cotton pique fabric",
+            "fabric": "100% Cotton Pique",
+            "care": "Machine Wash",
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "colors": [
+                "Navy",
+                "White",
+                "Black",
+                "Red",
+                "Green"
+            ],
+            "images": [
+                "polo-023-1.jpg",
+                "polo-023-2.jpg"
+            ],
+            "tags": [
+                "casual",
+                "smart casual",
+                "weekend",
+                "golf"
+            ],
+            "ratings": {
+                "average": 4.6,
+                "count": 324
+            },
+            "complementary_products": [
+                "CHINOS-045",
+                "SNEAKERS-034",
+                "WATCH-023"
+            ]
+        },
+        {
+            "sku": "BLAZER-012",
+            "name": "Slim Fit Blazer",
+            "category": "Outerwear",
+            "subcategory": "Blazers",
+            "brand": "Van Heusen",
+            "price": 7999,
+            "original_price": 9999,
+            "discount_percent": 20,
+            "description": "Modern slim fit blazer perfect for office and evening events",
+            "fabric": "Polyester Blend",
+            "care": "Dry Clean Only",
+            "sizes": [
+                "36",
+                "38",
+                "40",
+                "42",
+                "44"
+            ],
+            "colors": [
+                "Navy",
+                "Grey",
+                "Black",
+                "Burgundy"
+            ],
+            "images": [
+                "blazer-012-1.jpg",
+                "blazer-012-2.jpg"
+            ],
+            "tags": [
+                "formal",
+                "office",
+                "party",
+                "versatile"
+            ],
+            "ratings": {
+                "average": 4.5,
+                "count": 156
+            },
+            "complementary_products": [
+                "SHIRT-056",
+                "TROUSER-034",
+                "POCKET-SQUARE-012"
+            ]
+        },
+        {
+            "sku": "LEHENGA-001",
+            "name": "Designer Bridal Lehenga",
+            "category": "Ethnic Wear",
+            "subcategory": "Lehengas",
+            "brand": "Manyavar",
+            "price": 45999,
+            "original_price": 55999,
+            "discount_percent": 18,
+            "description": "Stunning bridal lehenga with heavy embroidery and sequin work",
+            "fabric": "Raw Silk with Net Dupatta",
+            "care": "Dry Clean Only",
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colors": [
+                "Red",
+                "Maroon",
+                "Pink",
+                "Gold"
+            ],
+            "images": [
+                "lehenga-001-1.jpg",
+                "lehenga-001-2.jpg"
+            ],
+            "tags": [
+                "bridal",
+                "wedding",
+                "festive",
+                "designer"
+            ],
+            "ratings": {
+                "average": 4.9,
+                "count": 45
+            },
+            "complementary_products": [
+                "JEWELRY-SET-001",
+                "CLUTCH-BRIDAL-001",
+                "HEELS-GOLD-001"
+            ]
+        },
+        {
+            "sku": "SNEAKERS-023",
+            "name": "Classic White Sneakers",
+            "category": "Footwear",
+            "subcategory": "Sneakers",
+            "brand": "Puma",
+            "price": 4999,
+            "original_price": 5999,
+            "discount_percent": 17,
+            "description": "Timeless white sneakers with cushioned sole for all-day comfort",
+            "fabric": "Leather Upper, Rubber Sole",
+            "care": "Wipe Clean",
+            "sizes": [
+                "UK 6",
+                "UK 7",
+                "UK 8",
+                "UK 9",
+                "UK 10",
+                "UK 11"
+            ],
+            "colors": [
+                "White",
+                "White/Black",
+                "White/Navy"
+            ],
+            "images": [
+                "sneakers-023-1.jpg",
+                "sneakers-023-2.jpg"
+            ],
+            "tags": [
+                "casual",
+                "everyday",
+                "sporty",
+                "versatile"
+            ],
+            "ratings": {
+                "average": 4.7,
+                "count": 678
+            },
+            "complementary_products": [
+                "JEANS-067",
+                "TSHIRT-045",
+                "SOCKS-PACK-001"
+            ]
+        },
+        {
+            "sku": "JACKET-034",
+            "name": "Classic Denim Jacket",
+            "category": "Outerwear",
+            "subcategory": "Jackets",
+            "brand": "Wrangler",
+            "price": 3499,
+            "original_price": 4499,
+            "discount_percent": 22,
+            "description": "Iconic denim jacket with button closure and chest pockets",
+            "fabric": "100% Cotton Denim",
+            "care": "Machine Wash",
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "colors": [
+                "Light Blue",
+                "Medium Blue",
+                "Dark Blue",
+                "Black"
+            ],
+            "images": [
+                "jacket-034-1.jpg",
+                "jacket-034-2.jpg"
+            ],
+            "tags": [
+                "casual",
+                "layering",
+                "denim",
+                "iconic"
+            ],
+            "ratings": {
+                "average": 4.6,
+                "count": 234
+            },
+            "complementary_products": [
+                "TSHIRT-WHITE-001",
+                "JEANS-067",
+                "BOOTS-023"
+            ]
+        },
+        {
+            "sku": "SHIRT-034",
+            "name": "Premium White Formal Shirt",
+            "category": "Topwear",
+            "subcategory": "Formal Shirts",
+            "brand": "Arrow",
+            "price": 2999,
+            "original_price": 3999,
+            "discount_percent": 25,
+            "description": "Crisp white formal shirt with wrinkle-resistant fabric",
+            "fabric": "Cotton Blend",
+            "care": "Machine Wash",
+            "sizes": [
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "colors": [
+                "White",
+                "Light Blue",
+                "Pink"
+            ],
+            "images": [
+                "shirt-034-1.jpg",
+                "shirt-034-2.jpg"
+            ],
+            "tags": [
+                "formal",
+                "office",
+                "interview",
+                "classic"
+            ],
+            "ratings": {
+                "average": 4.5,
+                "count": 445
+            },
+            "complementary_products": [
+                "TIE-012",
+                "CUFFLINKS-001",
+                "TROUSER-034"
+            ]
+        },
+        {
+            "sku": "BAG-045",
+            "name": "Leather Tote Bag",
+            "category": "Accessories",
+            "subcategory": "Bags",
+            "brand": "Hidesign",
+            "price": 6999,
+            "original_price": 8999,
+            "discount_percent": 22,
+            "description": "Spacious genuine leather tote bag perfect for work and travel",
+            "fabric": "Genuine Leather",
+            "care": "Leather Conditioner",
+            "sizes": [
+                "One Size"
+            ],
+            "colors": [
+                "Tan",
+                "Black",
+                "Brown",
+                "Burgundy"
+            ],
+            "images": [
+                "bag-045-1.jpg",
+                "bag-045-2.jpg"
+            ],
+            "tags": [
+                "work",
+                "travel",
+                "premium",
+                "leather"
+            ],
+            "ratings": {
+                "average": 4.7,
+                "count": 189
+            },
+            "complementary_products": [
+                "WALLET-023",
+                "BELT-034",
+                "SCARF-012"
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": "dresses",
+            "name": "Dresses",
+            "parent": null
+        },
+        {
+            "id": "ethnic",
+            "name": "Ethnic Wear",
+            "parent": null
+        },
+        {
+            "id": "topwear",
+            "name": "Topwear",
+            "parent": null
+        },
+        {
+            "id": "bottomwear",
+            "name": "Bottomwear",
+            "parent": null
+        },
+        {
+            "id": "outerwear",
+            "name": "Outerwear",
+            "parent": null
+        },
+        {
+            "id": "footwear",
+            "name": "Footwear",
+            "parent": null
+        },
+        {
+            "id": "accessories",
+            "name": "Accessories",
+            "parent": null
+        }
+    ]
+}
