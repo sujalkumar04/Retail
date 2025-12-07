@@ -2,7 +2,9 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import os
 from api.routes import chat_router, channels_router, webhooks_router
 
 # Create FastAPI app
@@ -26,16 +28,28 @@ app.include_router(chat_router, prefix="/api/chat", tags=["chat"])
 app.include_router(channels_router, prefix="/api/channels", tags=["channels"])
 app.include_router(webhooks_router, prefix="/api/webhooks", tags=["webhooks"])
 
+# Mount static files
+# We mount it at /static for assets, but we also want to serve html files from root
+app.mount("/assets", StaticFiles(directory="frontend/assets"), name="assets")
 
 @app.get("/")
 async def root():
-    """Root endpoint"""
-    return {
-        "message": "Retail AI Agent API",
-        "version": "1.0.0",
-        "status": "running"
-    }
+    """Serve landing page"""
+    return FileResponse('frontend/landing.html')
 
+@app.get("/index.html")
+async def chat_page():
+    """Serve chat page"""
+    return FileResponse('frontend/index.html')
+
+@app.get("/landing.html")
+async def landing_page():
+    """Serve landing page explicitly"""
+    return FileResponse('frontend/landing.html')
+
+# Mount the rest of the frontend files (css, js) at root
+# This must be last to avoid overriding API routes
+app.mount("/", StaticFiles(directory="frontend"), name="frontend")
 
 @app.get("/health")
 async def health_check():

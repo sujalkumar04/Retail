@@ -1,5 +1,5 @@
 // Configuration
-const API_URL = 'http://localhost:8000/api/chat';
+const API_URL = '/api/chat';
 let sessionId = null;
 let customerId = null; // Default to guest/null to avoid "Priya Sharma"
 
