@@ -20,14 +20,16 @@ def generate_id(prefix: str = "") -> str:
 
 def load_json_data(filename: str) -> Dict:
     """Load JSON data from data directory"""
-    data_dir = Path(__file__).parent.parent.parent / "data"
+    # Use absolute path relative to this file
+    base_dir = Path(__file__).parent.parent.parent
+    data_dir = base_dir / "data"
     file_path = data_dir / filename
     
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        print(f"Warning: {filename} not found")
+        print(f"Warning: {filename} not found at {file_path}")
         return {}
     except json.JSONDecodeError:
         print(f"Warning: {filename} is not valid JSON")
@@ -36,13 +38,19 @@ def load_json_data(filename: str) -> Dict:
 
 def save_json_data(filename: str, data: Dict) -> bool:
     """Save JSON data to data directory"""
-    data_dir = Path(__file__).parent.parent.parent / "data"
+    # Use absolute path relative to this file
+    base_dir = Path(__file__).parent.parent.parent
+    data_dir = base_dir / "data"
     file_path = data_dir / filename
     
     try:
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         return True
+    except OSError as e:
+        # Handle read-only filesystem (e.g. Vercel)
+        print(f"Warning: Could not save {filename} (likely read-only filesystem): {e}")
+        return False
     except Exception as e:
         print(f"Error saving {filename}: {e}")
         return False
